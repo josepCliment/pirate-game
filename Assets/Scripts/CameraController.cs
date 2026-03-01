@@ -13,7 +13,7 @@ public class CameraController : MonoBehaviour
     private float _currentX = 0f;
 
     private float _currentY = 45f;
-    
+
     public float waterLevel = 0f; // Altura del agua
     private bool _isUnderwater = false;
 
@@ -39,7 +39,7 @@ public class CameraController : MonoBehaviour
         transform.position = target.position + offset;
 
         transform.LookAt(target);
-        // CheckUnderwater();
+        CheckUnderwater();
     }
 
     private void CheckUnderwater()
