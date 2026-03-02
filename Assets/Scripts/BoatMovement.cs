@@ -119,4 +119,7 @@ public class BoatMovement : MonoBehaviour
             _rigidbody.MovePosition(pos);
         }
     }
+
+    public float CurrentSpeed => _currentSpeed;
+    public float MaxSpeed => maxSpeed;
 }
